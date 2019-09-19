@@ -4,7 +4,7 @@ node {
    git url: 'https://github.com/vasanth-devops/maven-project.git'
    sh 'git clean -fdx'
 
-   def mvnHome = tool 'M3'
+   def mvnHome = tool 'my_Maven_3.6.0'
 
    stage 'build'
    sh "${mvnHome}/bin/mvn versions:set -DnewVersion=${env.BUILD_NUMBER}"
