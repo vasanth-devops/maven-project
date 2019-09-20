@@ -18,12 +18,5 @@ node {
    }
 
    stage 'archive'
-   archive './target/*.jar'
-}
-
-
-node {
-    
-   stage 'deploy Production'
-   archive './target/*.jar'
+   archive '../target/*.jar'
 }
