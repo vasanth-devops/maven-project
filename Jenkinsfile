@@ -17,6 +17,6 @@ node {
      sh "${mvnHome}/bin/mvn verify"
    }
 
-   stage 'archive'
-   archiveArtifacts '../target/*.jar'
+   stage 'archiveArtifacts'
+   archiveArtifacts artifacts '../target/*.jar'
 }
