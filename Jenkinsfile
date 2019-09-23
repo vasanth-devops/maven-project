@@ -18,5 +18,5 @@ node {
    }
 
    stage 'archiveArtifacts'
-   archiveArtifacts artifacts '../target/*.jar'
+   archiveArtifacts artifacts './target/*.jar'
 }
