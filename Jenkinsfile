@@ -16,5 +16,9 @@ node {
    }, 'verify': {
      sh "${mvnHome}/bin/mvn verify"
    }
+   stage('Mvn Package'){
+	 
+	   
+	   sh "${mvnHome} clean package deploy"
 
   }
