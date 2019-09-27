@@ -19,7 +19,7 @@ node {
    stage('Mvn Package'){
 	 
 	   
-	   sh "${mvnHome} clean package deploy"
+	   sh "${mvnHome} clean package"
 
   }
 }
